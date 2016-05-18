@@ -1,0 +1,1 @@
+[Date]:2016-05-12 08:28:37 Warning Error:call_user_func_array() expects parameter 1 to be a valid callback, first array member is not a valid class name or object Error File : /var/www/YuYiPHP/vendor/yuyiphp/framework/src/System/Database/Model.php Error Number : 87 (runtime 0.5344 sec) 

@@ -1,0 +1,25 @@
+{
+    "name": "yuyiphp/yuyiphp",
+    "description": "This is YuYiPHP Framework !",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Qxy",
+            "email": "2495490010@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "yuyiphp/framework" : "1.1.*"
+    },
+    "autoload": {
+        "classmap": [
+
+        ]
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "prefer-stable": true
+}

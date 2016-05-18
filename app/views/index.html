@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>禹译许愿墙</title>
+    <link rel="stylesheet" href="<{$__RESOURCE__}>/css/index.css"/>
+</head>
+<body>
+<div id='top'>
+    <span id='send'></span>
+</div>
+<div id='main'>
+    <{foreach from=$wishs item=wish}>
+    <dl class='paper a1'>
+        <dt>
+            <span class='username'>访客</span>
+            <span class='num'>No.<{$wish.id}></span>
+        </dt>
+        <dd class='content'><{$wish.content}></dd>
+        <dd class='bottom'>
+            <span class='time'><{$wish.time|date_format:"%Y-%m-%d %H:%M:%S"}></span>
+            <a href="" class='close'></a>
+        </dd>
+    </dl>
+    <{/foreach}>
+</div>
+
+<div id='send-form'>
+    <p class='title'><span>许下你的愿望吧!</span><a href="" id='close'></a></p>
+
+    <form action="/index/wish" name='wish' method="post">
+        <p>
+            <label for="content">愿望：(您还可以输入&nbsp;<span id='font-num'>300</span>&nbsp;个字)</label>
+            <textarea name="content" id='content'></textarea>
+
+        <div id='phiz'>
+            <img src="<{$__RESOURCE__}>/image/phiz/zhuakuang.gif" alt="抓狂"/>
+            <img src="<{$__RESOURCE__}>/image/phiz/baobao.gif" alt="抱抱"/>
+            <img src="<{$__RESOURCE__}>/image/phiz/haixiu.gif" alt="害羞"/>
+            <img src="<{$__RESOURCE__}>/image/phiz/ku.gif" alt="酷"/>
+            <img src="<{$__RESOURCE__}>/image/phiz/xixi.gif" alt="嘻嘻"/>
+            <img src="<{$__RESOURCE__}>/image/phiz/taikaixin.gif" alt="太开心"/>
+            <img src="<{$__RESOURCE__}>/image/phiz/touxiao.gif" alt="偷笑"/>
+            <img src="<{$__RESOURCE__}>/image/phiz/qian.gif" alt="钱"/>
+            <img src="<{$__RESOURCE__}>/image/phiz/huaxin.gif" alt="花心"/>
+            <img src="<{$__RESOURCE__}>/image/phiz/jiyan.gif" alt="挤眼"/>
+        </div>
+        </p>
+       <input type="submit" value="许愿" id="send-btn"/>
+    </form>
+</div>
+<script type="text/javascript" src='<{$__RESOURCE__}>/js/jquery-1.7.2.min.js'></script>
+<script type="text/javascript" src='<{$__RESOURCE__}>/js/index.js'></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="<{$__RESOURCE__}>/js/iepng.js"></script>
+<script type="text/javascript">
+    DD_belatedPNG.fix('#send,#close,.close', 'background');
+</script>
+<![endif]-->
+</body>
+</html>

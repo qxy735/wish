@@ -1,0 +1,4 @@
+[Date]:2016-05-09 10:02:58 Warning Error:Missing argument 3 for System\Routing\Router::get() Error File : /var/www/YuYiPHP/vendor/yuyiphp/framework/src/System/Routing/Router.php Error Number : 44 (runtime 0.002 sec) 
+[Date]:2016-05-09 10:02:58 Warning Error:Missing argument 3 for System\Routing\Router::get() Error File : /var/www/YuYiPHP/vendor/yuyiphp/framework/src/System/Routing/Router.php Error Number : 44 (runtime 0.0148 sec) 
+[Date]:2016-05-09 10:02:58 Warning Error:Missing argument 3 for System\Routing\Router::get() Error File : /var/www/YuYiPHP/vendor/yuyiphp/framework/src/System/Routing/Router.php Error Number : 44 (runtime 0.0149 sec) 
+[Date]:2016-05-09 10:02:58 Warning Error:Missing argument 3 for System\Routing\Router::get() Error File : /var/www/YuYiPHP/vendor/yuyiphp/framework/src/System/Routing/Router.php Error Number : 44 (runtime 0.015 sec) 
